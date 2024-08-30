@@ -8,12 +8,48 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff; /* White text for contrast */
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 0 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #f76c6c; /* Accent color background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
 }
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* Header styling */
@@ -293,6 +329,8 @@ i {
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .testimonial-author p {
@@ -483,4 +521,49 @@ footer {
 
 .footer-content a:hover {
   text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #333; /* Dark background to match header */
+  color: #fff; /* White text for contrast */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+  color: #fff;
+}
+
+footer nav {
+  margin-top: 10px;
+}
+
+footer nav a {
+  color: #f76c6c; /* Accent color for links */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+  color: #ff8c8c; /* Slightly lighter accent color on hover */
+}
+
+textarea {
+  resize: none;
 }

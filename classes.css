@@ -1,0 +1,158 @@
+/* styles.css */
+/* styles.css */
+
+/* Basic reset */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* General styling for the header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+  padding: 40px 20px;
+}
+
+/* Classes section */
+.classes {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.classes h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.class-item {
+  display: inline-block;
+  width: 22%;
+  margin: 10px 1%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.class-item i {
+  font-size: 3em;
+  color: #f76c6c;
+  margin-bottom: 15px;
+}
+
+.class-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.class-item p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Instructors section */
+.instructors {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.instructors h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.instructor {
+  display: inline-block;
+  width: 30%;
+  margin: 20px 1%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.instructor img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.instructor h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.instructor p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+.footer-content a {
+  color: #f76c6c;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
