@@ -1,0 +1,486 @@
+/* styles.css */
+
+/* Basic reset */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.cta-button {
+  background-color: #f76c6c;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #ff3b3b;
+}
+
+/* Hero section styling */
+.hero {
+  background: url('gym.jpg') no-repeat center center/cover;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.hero .cta-button {
+  background-color: #f76c6c;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+}
+
+/* Stats styling */
+/* Stats section styling */
+.stats {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.stat h3 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.stat p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Benefits styling */
+
+/* Benefits section styling with parallax effect */
+.benefits {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.benefits-background {
+  background: url('parallax-background.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translateZ(-1px) scale(1.5);
+  will-change: transform;
+}
+
+.benefits-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+  z-index: 1;
+}
+
+.benefits-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.benefits h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.benefit {
+  margin-bottom: 30px;
+}
+
+.benefit h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 1.2em;
+}
+
+.benefits .cta-button {
+  background-color: #f76c6c;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+}
+
+/* styles.css */
+
+/* Features section styling */
+.features {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+i {
+  font-size: 3em;
+  color: #f76c6c;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.features .cta-button {
+  background-color: #f76c6c;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.features .cta-button:hover {
+  background-color: #ff3b3b;
+}
+/* Testimonials section styling */
+.testimonials {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.testimonial-card {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.testimonial-body {
+  margin-bottom: 20px;
+}
+
+.testimonial-body p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonial-author p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.testimonial-rating {
+  color: #f76c6c;
+}
+
+.star {
+  font-size: 1.5em;
+  margin: 0 2px;
+}
+
+.testimonials .cta-button {
+  background-color: #f76c6c;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.testimonials .cta-button:hover {
+  background-color: #ff3b3b;
+}
+
+/* FAQs section styling */
+.faqs {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.faqs-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faqs h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.accordion {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 800px;
+}
+
+.accordion-button {
+  background-color: #f76c6c;
+  color: #fff;
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.accordion-button:hover {
+  background-color: #ff3b3b;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-content p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* styles.css */
+
+/* Final CTA section styling */
+.final-cta {
+  background-color: #f76c6c;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.final-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.final-cta h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.final-cta p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.final-cta .cta-button {
+  background-color: #fff;
+  color: #f76c6c;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.final-cta .cta-button:hover {
+  background-color: #f4f4f4;
+  color: #f76c6c;
+}
+
+/* Optional Contact Form styling */
+.contact-form {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #fff;
+  color: #f76c6c;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #f4f4f4;
+}
+/* styles.css */
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+.footer-content a {
+  color: #f76c6c;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
